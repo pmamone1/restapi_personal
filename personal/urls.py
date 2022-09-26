@@ -1,9 +1,9 @@
 from rest_framework import routers
-from .api import ProyectoViewSet
+from .api import PersonalViewSet
 
 router = routers.DefaultRouter()
 
-router.register('api/proyectos', ProyectoViewSet, 'proyectos')
+router.register('api/personal', PersonalViewSet, 'personal')
 
 urlpatterns = router.urls
 
